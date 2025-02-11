@@ -39,7 +39,7 @@ h1 {
 }
 
 #about {
-    background-image: url('/img/mar.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background: url('https://itsjulius29.github.io/CVJulioCampos/img/mar.jpg') no-repeat center center/cover; /* Usar una imagen o color de fondo */
     height: 1000px; /* Ajusta la altura según necesites */
     background-attachment: fixed; /* Esto crea el efecto parallax */
     background-position: center;
