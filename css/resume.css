@@ -31,42 +31,48 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-#projects {
+
+#resume {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-.project-card {
-    display: inline-block;
-    width: 45%;
-    background-color: #fff;
-    margin: 20px 2%;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
-.project-card img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
-}
-
-.project-card h2 {
+h2 {
     font-size: 1.5rem;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.project-card a {
-    text-decoration: none;
-    color: #007BFF;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.project-card a:hover {
-    text-decoration: underline;
+ul li {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+ul li h3 {
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
+
+ul li p {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul li h3, ul li p {
+    margin-bottom: 5px;
 }
 
 /* Animación de entrada */
