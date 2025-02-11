@@ -27,7 +27,7 @@
 
     <!-- Sección Currículum -->
     <section id="resume">
-        <h1 data-aos="fade-up" >Mi Currículum</h1>
+        <h1 data-aos="fade-up">Mi Currículum</h1>
 
         <!-- Experiencia -->
         <div class="experience" data-aos="fade-left">
@@ -64,20 +64,35 @@
         </div>
 
         <!-- Habilidades -->
-        <div class="skills" data-aos="fade-up">
+        <div class="skills" data-aos="fade-left">
             <h2>Habilidades</h2>
-            <ul>
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>Frameworks: React, Vue.js</li>
-                <li>Git y GitHub</li>
-                <li>Desarrollo de aplicaciones móviles con React Native</li>
-                <li>Diseño UX/UI</li>
-            </ul>
+            <div class="skills-bar">
+                <label for="html">HTML</label>
+                <progress id="html" value="90" max="100"></progress>
+            </div>
+            <div class="skills-bar">
+                <label for="css">CSS</label>
+                <progress id="css" value="85" max="100"></progress>
+            </div>
+            <div class="skills-bar">
+                <label for="js">JavaScript</label>
+                <progress id="js" value="80" max="100"></progress>
+            </div>
         </div>
+
+        <div class="download-section" data-aos="fade-up">
+            <h2>Descargar CV</h2>
+            <a href="path_to_your_resume.pdf" download="Mi_CV_Julio_Campos">⬇️</a>
+        </div>
+        
     </section>
 
+    <a href="contact.html" class="contact-btn">Contáctame</a>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="js/animations.js" ></script>
+    <script src="js/animations.js"></script>
 
 </body>
 
