@@ -38,28 +38,76 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ddddddc2;
+}
+
+section p {
+    font-size: 1rem;
+    color: #ddddddc2;
+}
+
+.img-me{
+    height: auto;
+    width: 200px;
+    border-radius: 20px;
+    transition: transform 0.4s, box-shadow 0.3s ease-in-out;
+    cursor: pointer; /* Cambiar el cursor cuando el mouse pase por encima */
+    transform-style: preserve-3d ;
+}
+
+.img-me:hover {
+    transform: rotateY(20deg) scale(1.1) translateY(-50px); /* Rota, escala y salta */
+    width: 250px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Añadir sombra al pasar el ratón */
+}
+
+
 #about {
-    background: url('https://itsjulius29.github.io/CVJulioCampos/img/mar.jpg') no-repeat center center/cover; /* Usar una imagen o color de fondo */
-    height: 1000px; /* Ajusta la altura según necesites */
-    background-attachment: fixed; /* Esto crea el efecto parallax */
+    background: url('https://itsjulius29.github.io/CVJulioCampos/img/mar.jpg') no-repeat center center/cover;
+    /* Usar una imagen o color de fondo */
+    height: 1500px;
+    max-width: 100%;
+    /* Ajusta la altura según necesites */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:  cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
     position: relative;
-    color: rgba(255, 255, 255, 0.575);
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-content {
+    display: inline-block;
     position: absolute;
-    top: 30%; /* Centrado vertical */
-    left: 30%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para hacer el texto legible */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro para hacer el texto legible */
     padding: 20px;
     border-radius: 8px;
     max-width: 800px;
-    width: 90%;
+    width: 50%;
 }
 
 /* Animación de entrada */
@@ -73,3 +121,11 @@ h1 {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hover-photo {
+        width: 150px; /* Ajustar el tamaño de la foto en pantallas pequeñas */
+    }
+}
+
