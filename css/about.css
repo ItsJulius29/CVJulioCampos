@@ -33,21 +33,33 @@ nav ul li a {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
     margin-top: 50px;
+    font-size: 2rem;
 }
 
 #about {
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    background-image: url('/img/mar.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    height: 1000px; /* Ajusta la altura según necesites */
+    background-attachment: fixed; /* Esto crea el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    position: relative;
+    color: rgba(255, 255, 255, 0.575);
 }
 
 .about-content {
-    background-color: #fff;
+    position: absolute;
+    top: 30%; /* Centrado vertical */
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para hacer el texto legible */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
 }
 
 /* Animación de entrada */

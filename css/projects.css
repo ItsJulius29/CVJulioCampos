@@ -15,6 +15,11 @@ nav {
     z-index: 1000;
 }
 
+h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -32,21 +37,24 @@ nav ul li a {
 }
 
 #projects {
-    padding: 20px;
+    padding: 50px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .project-card {
     display: inline-block;
     width: 45%;
-    background-color: #fff;
+    background-color: #dddddd;
     margin: 20px 2%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Empezamos con las tarjetas invisibles */
 }
 
 .project-card img {
@@ -65,6 +73,11 @@ nav ul li a {
     color: #007BFF;
 }
 
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .project-card a:hover {
     text-decoration: underline;
 }
@@ -79,4 +92,21 @@ nav ul li a {
 [data-aos="fade-up"].aos-animate {
     opacity: 1;
     transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateX(0) translateY(0); /* Restablecer a la posición original */
 }
