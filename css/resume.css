@@ -13,6 +13,26 @@ nav {
     background-color: #333;
     padding: 10px 0;
     z-index: 1000;
+    position: fixed; /* Fijar el navbar en la parte superior */
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Alineación en fila */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 /* Estilo para la barra de habilidades */
@@ -46,25 +66,10 @@ progress {
 }
 
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
 
 
 #resume {
-    padding: 50px 20px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -159,7 +164,7 @@ ul li h3, ul li p {
 /* Sección de experiencia y educación */
 section {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 60px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
